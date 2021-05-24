@@ -1,5 +1,5 @@
 // C++ program for implemenbting Shortest Seek Time First disk schedule
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>  
 using namespace std;
 
 // Calculates difference of each track number with the head position
@@ -21,7 +21,7 @@ int findMIN (int diff[][2], int n)
   {
     if (!diff[i][1] && (minimum > diff[i][0]))
     {
-      minimum = index[i][0];
+      minimum = diff[i][0];
       index = i;
     }
   }
